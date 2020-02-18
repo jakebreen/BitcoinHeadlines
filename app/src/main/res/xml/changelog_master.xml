@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+    <release version="2.1.8" versioncode="13"
+        tools:ignore="MissingPrefix">
+        <change>Added a share button to the articles page for sharing content on social media platforms.</change>
+        <change>Article URL's can now be shortened before sharing by enabling "Short links" in the settings menu.</change>
+    </release>
+
+    <release version="2.1.6" versioncode="11"
+        tools:ignore="MissingPrefix">
+        <change>Fix for a bug causing crashing at random intervals on a few devices.</change>
+    </release>
+
+    <release version="2.1.5" versioncode="10"
+        tools:ignore="MissingPrefix">
+        <change>A counter totalling the number new subscribed headlines has been added to the subscribers button.</change>
+        <change>The subscribers headline list now retrieves and lists only new headlines first, improving loading times.</change>
+    </release>
+
+    <release version="2.1.1" versioncode="6"
+        tools:ignore="MissingPrefix">
+        <change>Subscribed news source's headlines can now be viewed in a combined, single list.</change>
+        <change>New button added to the bottom of the Source page to access your subscribed news headlines.</change>
+        <change>Article timezones have been addressed and should now be converted to your local time.</change>
+    </release>
+
+</changelog>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    useLibrary 'org.apache.http.legacy'
+    //useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "uk.co.breen.jake.bitcoinheadlines"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 13
+        versionName "2.1.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'io.github.kobakei:ratethisapp:1.2.0'
+    compile 'de.cketti.library.changelog:ckchangelog:1.2.2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/android-viewbadger.jar')
+}
+
+
+apply plugin: 'com.google.gms.google-services'
